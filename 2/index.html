@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма обратной связи</title>
+</head>
+<body>
+<h1>Форма обратной связи</h1>
+<form action="settings.php" method="POST">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name" maxlength="20" required><br><br>
+
+    <label for="rating">Оценка страницы (от 0 до 10):</label>
+    <input type="number" id="rating" name="rating" min="0" max="10" required><br><br>
+
+    <label for="comment">Комментарий:</label><br>
+    <textarea id="comment" name="comment" rows="5" maxlength="500" required></textarea><br><br>
+
+    <input type="submit" value="Отправить">
+</form>
+</body>
+</html>
